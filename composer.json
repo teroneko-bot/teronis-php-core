@@ -1,0 +1,15 @@
+{
+    "name": "teronis-php/core",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Teronis\\Core\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "require": {
+        "marc-mabe/php-enum": "^3.0"
+    }
+}
