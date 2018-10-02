@@ -8,8 +8,5 @@
         "files": [
             "src/functions.php"
         ]
-    },
-    "require": {
-        "marc-mabe/php-enum": "^3.0"
     }
 }

@@ -9,7 +9,7 @@ class SizeLimit {
     private $hasExceeded;
 
     public function __construct(float $limit, float $size = 0) {
-        $this->$limit = $limit;
+        $this->limit = $limit;
         $this->size = $size;
         $this->hasExceeded = false;
         $this->calculateHasExceeded();
@@ -31,15 +31,17 @@ class SizeLimit {
 
     // methods
 
-    private function increaseSizeBy(float $size) {
+    public function increaseSizeBy(float $size) {
         $this->size += $size;
+        $this->calculateHasExceeded();
     }
 
-    private function decreaseSizeBy(float $size) {
+    public function decreaseSizeBy(float $size) {
         $this->size -= $size;
+        $this->calculateHasExceeded();
     }
 
     private function calculateHasExceeded() {
-        $this->hasExceeded = $size > $limit;
+        $this->hasExceeded = $this->size > $this->limit;
     }
 }
