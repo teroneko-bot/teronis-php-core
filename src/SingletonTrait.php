@@ -5,7 +5,8 @@ trait SingletonTrait
     private static $instance = null;
 
     /**
-     * Singleton pattern implementation.
+     * Sigleton pattern implementation.
+     *
      * @return mixed
      */
     public static function getInstance()
