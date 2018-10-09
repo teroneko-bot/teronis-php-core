@@ -1,7 +1,6 @@
 <?php namespace Teronis\Core;
 
-trait SingletonTrait
-{
+trait SingletonTrait {
     private static $instance = null;
 
     /**
@@ -9,8 +8,7 @@ trait SingletonTrait
      *
      * @return mixed
      */
-    public static function getInstance()
-    {
+    public static function getInstance() {
         if (is_null($instance)) {
             $instance = new self();
         }

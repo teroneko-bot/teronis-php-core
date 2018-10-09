@@ -4,9 +4,6 @@
     "autoload": {
         "psr-4": {
             "Teronis\\Core\\": "src/"
-        },
-        "files": [
-            "src/functions.php"
-        ]
+        }
     }
 }

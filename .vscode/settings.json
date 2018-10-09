@@ -1,0 +1,11 @@
+{
+    "php.suggest.basic": false,
+    "phpfmt.php_bin": "C:\\wamp64\\bin\\php\\php7.2.4\\php.exe",
+    "phpfmt.psr2": false,
+    "phpfmt.passes": [
+        "StripSpaceWithinControlStructures",
+    ],
+    "phpfmt.exclude": [
+        "AllmanStyleBraces",
+    ],
+}
